@@ -1,0 +1,172 @@
+
+<!-- BRRRR SKRRT -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+  <h3 class="rainbow rainbow_text_animated">sudoExecutor Beta</h3>
+
+
+
+
+<input type="text" name="cs-code" id="cs-code" placeholder="Put a code to execute.."><div style="height: 100px;"></div>
+
+<style>
+/** super css by hx3 **/
+
+  body {
+    background: linear-gradient(to left, #0e0e0e, #123456);
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+
+  button {
+    width: 100px;
+        height: 30px;
+    padding: 100px;
+    margin: 0 auto;
+     border-radius: 5px;
+     background: white;
+     border: 1;
+     top: -50px;
+     border-radius: 20px;
+     border-color: black;
+     font-family: monospace;
+     padding: 5px 20px;
+     outline: 0;
+     margin: 2;
+     transition-duration: 0.69s
+     
+     
+  }
+  
+  button:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  input {
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 70%;
+    outline: 0;
+    font-family: monospace;
+    border: 0;
+    border-radius: 20px;
+    margin: 0;
+    
+  }
+
+  html::after {
+  content:'';
+  background: linear-gradient(21deg, rgb(136, 255, 0), #1beabd);
+  height:5px;
+  width:100%;
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 4s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.glow {    font-family: monospace;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+  -moz-animation: glow 1.5s ease-in-out infinite alternate;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 25px #fff, 0 0 35px hsl(143, 100%, 45%), 0 0 40px hsl(143, 100%, 45%), 0 0 45px hsl(143, 100%, 45%), 0 0 55px hsl(143, 100%, 45%), 0 0 65px hsl(143, 100%, 45%);
+  }
+  to {
+    text-shadow: 0 0 10px transparent, 0 0 25px transparent, 0 0 35px transparent, 0 0 40px transparent, 0 0 45px transparent, 0 0 55px transparent, 0 0 65px transparent;
+  }
+}
+</style>
+
+<script>
+  
+  //  by hx3
+
+  var button = document.createElement("button");
+  button.innerHTML = "Execute";
+
+  var body = document.getElementsByTagName("body")[0];
+  body.appendChild(button);
+
+  let c = document.getElementById('cs-code').value;
+  button.addEventListener ("click", function() {
+    eval(document.getElementById('cs-code').value);
+    alert("Success!");
+  });
+ 
+</script>
+
+<!-- BRRRR SKRRT -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h4 class="glow">Back-End by hx3, Front-End by hx3 @ v1.0.2</h4>
